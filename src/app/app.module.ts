@@ -8,17 +8,17 @@ import { SigninComponent } from './signin/signin.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
-// const appRoutes:Routes = [
-//   {
-//     path:"signup",component:SignupComponent
-//   },
-//   {
-//     path:"signin",component:SigninComponent
-//   },
-//   {
-//     path:"dashboard",component:DashboardComponent
-//   }
-// ]
+const appRoutes:Routes = [
+  {
+    path:"",component:SignupComponent
+  },
+  {
+    path:"signin",component:SigninComponent
+  },
+  {
+    path:"dashboard",component:DashboardComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
